@@ -92,7 +92,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	
 	/* ---- */
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+	//{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	
 	/* Switching between monitors */
@@ -103,7 +103,7 @@ static Key keys[] = {
 	
 	/* Keybindings for programs */
  // { MODKEY                        XK_s,      spawn,          CMD("tabbed -r 2 surf -pe x 'www.startpage.com'") },
-	{ MODKEY,                       XK_s,      spawn,          CMD("surf www.startpage.com") },
+	{ MODKEY,                       XK_s,      spawn,          CMD("scrot /home/neo/Documents/ScreenShot/") },
 	{ ControlMask|Mod1Mask,         XK_Return, spawn,          CMD("pcmanfm") },
 
 	/* Switch tags */
