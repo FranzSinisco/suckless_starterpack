@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "www", "dev", "cmd", "file", "vid", "vm", "sys", "txt", "pdf" };
+static const char *tags[] = { ">_", "file", "www", "dev", "cmd", "txt", "vm", "vid", "pdf" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -104,6 +104,7 @@ static Key keys[] = {
 	/* Keybindings for programs */
  // { MODKEY                        XK_s,      spawn,          CMD("tabbed -r 2 surf -pe x 'www.startpage.com'") },
 	{ MODKEY,                       XK_s,      spawn,          CMD("scrot /home/neo/Documents/ScreenShot/") },
+	{ MODKEY,          				XK_e,      spawn,          CMD("emacsclient -c -a 'emacs'") },
 	{ ControlMask|Mod1Mask,         XK_Return, spawn,          CMD("pcmanfm") },
 
 	/* Switch tags */

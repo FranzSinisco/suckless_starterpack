@@ -117,8 +117,8 @@ static const char *colorname[] = {
   [15] = "#abb2bf", // white
 
   /* special colors */
-  [256] = "#abb2bf",  // , Background
-  [257] = "#282c34" // 7 , Foreground
+  [256] = "#bbc2cf",  // , Foreground original color #abb2bf
+  [257] = "#21242b" // 7 , Background original color #282c34 
 };
 
 /*
