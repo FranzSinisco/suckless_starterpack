@@ -7,11 +7,11 @@ static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ubuntu Condensed:size=10" };
 static const char dmenufont[]       = "Ubuntu Condensed:size=10";
-static const char col_gray1[]       = "#182028";
-static const char col_gray2[]       = "#303040";
-static const char col_gray3[]       = "#404858";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#70a0d8";
+static const char col_gray1[]       = "#282c34";
+static const char col_gray2[]       = "#23272e";
+static const char col_gray3[]       = "#a9a1e1";
+static const char col_gray4[]       = "#282c34";
+static const char col_cyan[]        = "#51afef";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -105,6 +105,7 @@ static Key keys[] = {
  // { MODKEY                        XK_s,      spawn,          CMD("tabbed -r 2 surf -pe x 'www.startpage.com'") },
 	{ MODKEY,                       XK_s,      spawn,          CMD("scrot /home/neo/Documents/ScreenShot/") },
 	{ MODKEY,          				XK_e,      spawn,          CMD("emacsclient -c -a 'emacs'") },
+	{ MODKEY,          				XK_w,      spawn,          CMD("qutebrowser --target private-window www.startpage.com") },
 	{ ControlMask|Mod1Mask,         XK_Return, spawn,          CMD("pcmanfm") },
 
 	/* Switch tags */

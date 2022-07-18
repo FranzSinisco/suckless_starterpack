@@ -96,29 +96,29 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-  /* 8 normal colors */
-  [0] = "#171b23", // black
-  [1] = "#be5046", // dark red
-  [2] = "#98c379", // dark green
-  [3] = "#d19a66", // dark orange
-  [4] = "#61afef", // dark blue
-  [5] = "#c678dd", // dark magenta
-  [6] = "#56b6c2", // dark cyan 
-  [7] = "#828997", // grey   
+  /* 8 normal colors */                   // One Dark
+  [0] = "#1c1f24", // black                  #171b23
+  [1] = "#ff6c6b", // dark red               #be5046
+  [2] = "#98be65", // dark green             #98c379
+  [3] = "#da8548", // dark orange            #d19a66
+  [4] = "#51afef", // dark blue              #61afef
+  [5] = "#c678dd", // dark magenta           #c678dd
+  [6] = "#5699af", // dark cyan              #56b6c2
+  [7] = "#202328", // grey                   #828997
 
   /* 8 bright colors */
-  [8] = "#5c6370", // dark grey
-  [9] = "#e06c75", // red
-  [10] = "#98c379", // green
-  [11] = "#e5c07b", // orange
-  [12] = "#61afef", // blue
-  [13] = "#c678dd", // magenta
-  [14] = "#56b6c2", // cyan
-  [15] = "#abb2bf", // white
+  [8] = "#5b6268", // dark grey              #5c6370
+  [9] = "#da8548", // red                    #e06c75
+  [10] = "#4db5bd", // green                 #98c379
+  [11] = "#ecbe7b", // orange                #e5c07b
+  [12] = "#3071db", // blue                  #61afef
+  [13] = "#a9a1e1", // magenta               #c678dd
+  [14] = "#46d9ff", // cyan                  #56b6c2
+  [15] = "#dfdfdf", // white                 #abb2bf
 
   /* special colors */
   [256] = "#bbc2cf",  // , Foreground original color #abb2bf
-  [257] = "#21242b" // 7 , Background original color #282c34 
+  [257] = "#282c34" // 7 , Background alternative color #21242b 
 };
 
 /*
